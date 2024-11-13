@@ -1,0 +1,65 @@
+.calendar {
+  position: relative;
+}
+
+.month {
+  display: inline-block;
+  @include font-params(32px, 32px, 250, $text-color-primary);
+  margin-bottom: 15px;
+}
+
+.day {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.red {
+    background-color: $red-color;
+  }
+  &.green {
+    background-color: $green-color;
+  }
+  &.yellow {
+    background-color: $yellow-color;
+  }
+  &.blue {
+    background-color: $blue-color;
+  }
+}
+
+.events {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 500px;
+
+  background-color: $bg-color;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+
+  &.top {
+    bottom: 100%;
+    margin-bottom: 10px;
+  }
+
+  &.bottom {
+    top: 100%;
+    margin-top: 10px;
+  }
+}

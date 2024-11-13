@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+}
+
+.link {
+  padding: 20px 0;
+  
+  @include font-params(20px, 20px, 250, $text-color-primary);
+  text-decoration: none;
+
+  &.active {
+    border-bottom: 1px solid $red-color;
+  } 
+}

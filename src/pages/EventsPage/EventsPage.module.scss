@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  @include font-params(40px, 40px, 400, $text-color-primary);
+}

@@ -1,0 +1,79 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-bottom: 35px;
+}
+
+.title {
+  margin-bottom: 10px;
+  @include font-params(40px, 40px, 250, $text-color-primary);
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 4px 16px;
+  margin-right: 20px;
+
+  border-radius: 16px;
+  border: none;
+
+  @include font-params(16px, 20px, 400);
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.red {
+    color: $red-color;
+    background-color: $red-color-transparent;
+
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $text-color-black;
+      background-color: $red-color;
+    }
+  }
+
+  &.green {
+    color: $green-color;
+    background-color: $green-color-transparent;
+
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $text-color-black;
+      background-color: $green-color;
+    }
+  }
+
+  &.yellow {
+    color: $yellow-color;
+    background-color: $yellow-color-transparent;
+
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $text-color-black;
+      background-color: $yellow-color;
+    }
+  }
+
+  &.blue {
+    color: $blue-color;
+    background-color: $blue-color-transparent;
+
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $text-color-black;
+      background-color: $blue-color;
+    }
+  }
+}

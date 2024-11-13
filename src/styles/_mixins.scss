@@ -1,0 +1,6 @@
+@mixin font-params($size: 16px, $line-h: 16px, $weight: 250, $color: $text-color-primary) {
+  font-size: $size;
+  line-height: $line-h;
+  font-weight: $weight;
+  color: $color;
+}

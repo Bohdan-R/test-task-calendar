@@ -1,0 +1,48 @@
+.react-calendar {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: none !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0 !important;
+  margin-bottom: 10px !important;
+  @include font-params(16px, 32px, 300, $text-color-secondary);
+  
+  & > abbr {
+    text-decoration: none !important;
+  }
+}
+
+.react-calendar__tile {
+  position: relative !important;
+  padding: 0 !important;
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  line-height: 40px !important;
+  font-weight: 300 !important;
+  color: $text-color-primary !important;
+
+  &--active, &--now, &:hover, &:disabled {
+    background-color: transparent !important;
+  }
+
+  &:hover {
+    color: $red-color !important;
+  }
+
+  &:disabled {
+    color: $text-color-secondary !important;
+  }
+}
+
+.react-calendar__month-view__days__day {
+
+  &--neighboringMonth {
+    color: $text-color-secondary !important;
+  }
+}
+

@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1128px;
+  height: $header-height;
+
+  background-color: $bg-color;
+  border-bottom: 1px solid $red-color-transparent;
+
+  z-index: 10;
+}
+
+.logo {
+  @include font-params(24px, 24px, 600, $red-color);
+  text-decoration: none;
+}
